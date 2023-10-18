@@ -1,6 +1,54 @@
+import java.util.Scanner;
+
 public class SentenciaSwitchCase {
     public static void main(String[] args) {
-        int num = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese el número del mes entre 1-12");
+        int mes = scanner.nextInt();
+        String nombreMes = null;
+
+        switch (mes){
+            case 1:
+                nombreMes = "Enero";
+                break;
+            case 2:
+                nombreMes = "Febrero";
+                break;
+            case 3:
+                nombreMes = "Marzo";
+                break;
+            case 4:
+                    nombreMes = "Abril";
+                break;
+            case 5:
+                nombreMes = "Mayo";
+                break;
+            case 6:
+                nombreMes = "Junio";
+                break;
+            case 7:
+                nombreMes = "Julio";
+                break;
+            case 8:
+                nombreMes = "Agosto";
+                break;
+            case 9:
+                nombreMes = "Septiembre";
+                break;
+            case 10:
+                nombreMes = "Octubre";
+                break;
+            case 11:
+                nombreMes = "Noviembre";
+                break;
+            case 12:
+                nombreMes = "Diciembre";
+                break;
+            default:
+                nombreMes = "No se reconoce el mes";
+        }
+        System.out.println("nombreMes = " + nombreMes);
+        char num ='z';
         switch (num){
             case 0:
                 System.out.println("El número es cero");
@@ -14,6 +62,27 @@ public class SentenciaSwitchCase {
             case 3:
                 System.out.println("El número es tres");
                 break;
+            case 'a':
+                System.out.println("El caracter es a");
+                break;
+            default:
+                System.out.println("Número o caracter desconocido");
         }
+        String nombre = "pepe";
+
+        switch (nombre){
+            case "admin":
+                System.out.println("Hola admin, bienvenido!");
+                break;
+            case "Dessiré":
+                System.out.println("Hola Dessiré!");
+                break;
+            case "pepe":
+                System.out.println("Hola pepe");
+                break;
+            default:
+                System.out.println("Hola "+ nombre);
+        }
+
     }
 }
